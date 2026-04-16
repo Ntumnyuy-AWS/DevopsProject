@@ -1,9 +1,9 @@
-"use client"
-import AuthProvider from "../context/authContext.js"
-
-<AuthProvider>
-  <StyledComponentsRegistry>
-    <GlobalStyle />
-    {Children}
-  </StyledComponentsRegistry>
-</AuthProvider>
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>
+        {children}
+      </body>
+    </html>
+  );
+}
